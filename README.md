@@ -568,6 +568,18 @@ Y en [**http://localhost:8000/posts/**](http://localhost:8000/posts/) veremos
     alt="numbers">
 </div>
 
+## Patrones de diseño y Django
+Un patrón de diseño, en términos generales, es una solución reutilizable a un problema común.
+El patrón más común para el desarrollo web es **MVC** (Model, View, Controller). Django implementa un patrón similar llamado **MTV** (**Model**, **Template**, **View**).
+
+
+MTV => MVC:
+<ul>
+  <li>Views + Urls => Controller</li>
+  <li>Templates => View</li>
+  <li>Models => Model</li>
+</ul>
+
 ## Creacion de Super Usuario
 
 Para crear un **super usuario** en Django es bastante facil. En la consola escribimos
