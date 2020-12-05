@@ -659,6 +659,20 @@ class Profile(models.Model):
     return self.user.username
 ```
 
+## Conectarnos a otras bases de datos, Ej, postgres
+```py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydatabase',
+        'USER': 'mydatabaseuser',
+        'PASSWORD': 'mypassword',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
+```
+
 ## Implementar modelos en base de datos
 
 Los modelos creados en nuestras aplicaciones podemos aplicarlos en el esquema de nuestra base de datos. Primero debemos auditar los cambios en los modelos con:
