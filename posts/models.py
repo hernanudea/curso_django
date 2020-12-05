@@ -15,6 +15,8 @@ class User(models.Model):
     birthdate = models.DateField(blank=True, null=True)
     bio = models.TextField(max_length=2000, blank=True)
 
+    is_admin = models.BooleanField(default=False)
+
     create = models.DateTimeField(auto_now_add=True) # guarda la fecha de creación
     modified = models.DateTimeField(auto_now=True) # guarda la fecha en que se edito
 
