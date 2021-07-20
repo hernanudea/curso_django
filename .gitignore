@@ -107,3 +107,4 @@ venv.bak/
 # Django
 db.sqlite3
 media/
+
